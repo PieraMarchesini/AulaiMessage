@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6510FF48202B460B0086CFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6510FF47202B460B0086CFA0 /* Assets.xcassets */; };
+		6510FF4F202B460B0086CFA0 /* AulaiMessage MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6510FF4E202B460B0086CFA0 /* AulaiMessage MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6510FF54202B460B0086CFA0 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6510FF53202B460B0086CFA0 /* Messages.framework */; };
+		6510FF57202B460B0086CFA0 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510FF56202B460B0086CFA0 /* MessagesViewController.swift */; };
+		6510FF5A202B460B0086CFA0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6510FF58202B460B0086CFA0 /* MainInterface.storyboard */; };
+		6510FF5C202B460B0086CFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6510FF5B202B460B0086CFA0 /* Assets.xcassets */; };
+		6510FF68202B47230086CFA0 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510FF67202B47230086CFA0 /* DrawViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6510FF50202B460B0086CFA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6510FF3E202B460B0086CFA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6510FF4D202B460B0086CFA0;
+			remoteInfo = "AulaiMessage MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6510FF63202B460B0086CFA0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6510FF4F202B460B0086CFA0 /* AulaiMessage MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6510FF44202B460B0086CFA0 /* AulaiMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AulaiMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6510FF47202B460B0086CFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6510FF49202B460B0086CFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6510FF4E202B460B0086CFA0 /* AulaiMessage MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AulaiMessage MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6510FF53202B460B0086CFA0 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		6510FF56202B460B0086CFA0 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		6510FF59202B460B0086CFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6510FF5B202B460B0086CFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6510FF5D202B460B0086CFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6510FF67202B47230086CFA0 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6510FF4B202B460B0086CFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6510FF54202B460B0086CFA0 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6510FF3D202B460B0086CFA0 = {
+			isa = PBXGroup;
+			children = (
+				6510FF46202B460B0086CFA0 /* AulaiMessage */,
+				6510FF55202B460B0086CFA0 /* AulaiMessage MessagesExtension */,
+				6510FF52202B460B0086CFA0 /* Frameworks */,
+				6510FF45202B460B0086CFA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6510FF45202B460B0086CFA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6510FF44202B460B0086CFA0 /* AulaiMessage.app */,
+				6510FF4E202B460B0086CFA0 /* AulaiMessage MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6510FF46202B460B0086CFA0 /* AulaiMessage */ = {
+			isa = PBXGroup;
+			children = (
+				6510FF47202B460B0086CFA0 /* Assets.xcassets */,
+				6510FF49202B460B0086CFA0 /* Info.plist */,
+			);
+			path = AulaiMessage;
+			sourceTree = "<group>";
+		};
+		6510FF52202B460B0086CFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6510FF53202B460B0086CFA0 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6510FF55202B460B0086CFA0 /* AulaiMessage MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6510FF56202B460B0086CFA0 /* MessagesViewController.swift */,
+				6510FF67202B47230086CFA0 /* DrawViewController.swift */,
+				6510FF58202B460B0086CFA0 /* MainInterface.storyboard */,
+				6510FF5B202B460B0086CFA0 /* Assets.xcassets */,
+				6510FF5D202B460B0086CFA0 /* Info.plist */,
+			);
+			path = "AulaiMessage MessagesExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6510FF43202B460B0086CFA0 /* AulaiMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6510FF64202B460B0086CFA0 /* Build configuration list for PBXNativeTarget "AulaiMessage" */;
+			buildPhases = (
+				6510FF42202B460B0086CFA0 /* Resources */,
+				6510FF63202B460B0086CFA0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6510FF51202B460B0086CFA0 /* PBXTargetDependency */,
+			);
+			name = AulaiMessage;
+			productName = AulaiMessage;
+			productReference = 6510FF44202B460B0086CFA0 /* AulaiMessage.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		6510FF4D202B460B0086CFA0 /* AulaiMessage MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6510FF60202B460B0086CFA0 /* Build configuration list for PBXNativeTarget "AulaiMessage MessagesExtension" */;
+			buildPhases = (
+				6510FF4A202B460B0086CFA0 /* Sources */,
+				6510FF4B202B460B0086CFA0 /* Frameworks */,
+				6510FF4C202B460B0086CFA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AulaiMessage MessagesExtension";
+			productName = "AulaiMessage MessagesExtension";
+			productReference = 6510FF4E202B460B0086CFA0 /* AulaiMessage MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6510FF3E202B460B0086CFA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Piera Marchesini";
+				TargetAttributes = {
+					6510FF43202B460B0086CFA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6510FF4D202B460B0086CFA0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6510FF41202B460B0086CFA0 /* Build configuration list for PBXProject "AulaiMessage" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6510FF3D202B460B0086CFA0;
+			productRefGroup = 6510FF45202B460B0086CFA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6510FF43202B460B0086CFA0 /* AulaiMessage */,
+				6510FF4D202B460B0086CFA0 /* AulaiMessage MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6510FF42202B460B0086CFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6510FF48202B460B0086CFA0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6510FF4C202B460B0086CFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6510FF5C202B460B0086CFA0 /* Assets.xcassets in Resources */,
+				6510FF5A202B460B0086CFA0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6510FF4A202B460B0086CFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6510FF68202B47230086CFA0 /* DrawViewController.swift in Sources */,
+				6510FF57202B460B0086CFA0 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6510FF51202B460B0086CFA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6510FF4D202B460B0086CFA0 /* AulaiMessage MessagesExtension */;
+			targetProxy = 6510FF50202B460B0086CFA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6510FF58202B460B0086CFA0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6510FF59202B460B0086CFA0 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6510FF5E202B460B0086CFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6510FF5F202B460B0086CFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6510FF61202B460B0086CFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q8A65W24Q;
+				INFOPLIST_FILE = "AulaiMessage MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.AulaiMessage.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6510FF62202B460B0086CFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q8A65W24Q;
+				INFOPLIST_FILE = "AulaiMessage MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.AulaiMessage.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6510FF65202B460B0086CFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q8A65W24Q;
+				INFOPLIST_FILE = AulaiMessage/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.AulaiMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6510FF66202B460B0086CFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q8A65W24Q;
+				INFOPLIST_FILE = AulaiMessage/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.AulaiMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6510FF41202B460B0086CFA0 /* Build configuration list for PBXProject "AulaiMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6510FF5E202B460B0086CFA0 /* Debug */,
+				6510FF5F202B460B0086CFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6510FF60202B460B0086CFA0 /* Build configuration list for PBXNativeTarget "AulaiMessage MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6510FF61202B460B0086CFA0 /* Debug */,
+				6510FF62202B460B0086CFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6510FF64202B460B0086CFA0 /* Build configuration list for PBXNativeTarget "AulaiMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6510FF65202B460B0086CFA0 /* Debug */,
+				6510FF66202B460B0086CFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6510FF3E202B460B0086CFA0 /* Project object */;
+}

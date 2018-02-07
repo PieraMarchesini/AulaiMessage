@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bZ0-aQ-TE3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="pL5-rb-cb4">
+            <objects>
+                <viewController storyboardIdentifier="compact" id="bZ0-aQ-TE3" customClass="MessagesViewController" customModule="EtchAMessage_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ccp-Rv-Cdo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundCompact" translatesAutoresizingMaskIntoConstraints="NO" id="jAU-CP-5Np">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw9-A9-vBH">
+                                <rect key="frame" x="178" y="162" width="112" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pw9-A9-vBH" secondAttribute="height" multiplier="245:81" id="Y3x-aA-bRy"/>
+                                </constraints>
+                                <state key="normal" image="buttonStart"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="bZ0-aQ-TE3" eventType="touchUpInside" id="47g-i3-FWQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pw9-A9-vBH" firstAttribute="width" secondItem="jAU-CP-5Np" secondAttribute="width" multiplier="0.35" id="2Wd-nk-GLz"/>
+                            <constraint firstItem="jAU-CP-5Np" firstAttribute="centerX" secondItem="Ccp-Rv-Cdo" secondAttribute="centerX" id="DnT-oQ-RhZ"/>
+                            <constraint firstItem="jAU-CP-5Np" firstAttribute="centerY" secondItem="Ccp-Rv-Cdo" secondAttribute="centerY" id="el4-WY-Qqe"/>
+                            <constraint firstItem="jAU-CP-5Np" firstAttribute="height" secondItem="Ccp-Rv-Cdo" secondAttribute="height" id="iUj-tx-3HJ"/>
+                            <constraint firstItem="jAU-CP-5Np" firstAttribute="width" secondItem="Ccp-Rv-Cdo" secondAttribute="width" id="tXH-kb-pZy"/>
+                            <constraint firstItem="96M-pR-mr5" firstAttribute="trailing" secondItem="pw9-A9-vBH" secondAttribute="trailing" constant="30" id="uLL-oX-Qwd"/>
+                            <constraint firstItem="96M-pR-mr5" firstAttribute="bottom" secondItem="pw9-A9-vBH" secondAttribute="bottom" constant="30" id="xdS-pL-Tlt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="96M-pR-mr5"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="229"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OP3-I7-Wto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-232" y="133"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="JLG-aA-71L">
+            <objects>
+                <viewController storyboardIdentifier="expanded" id="1Hh-s0-ebQ" customClass="DrawViewController" customModule="EtchAMessage_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VkR-f4-i3m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundExpanded" translatesAutoresizingMaskIntoConstraints="NO" id="tlR-6c-Uev">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-5G-gon">
+                                <rect key="frame" x="20" y="65" width="280" height="250"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z4g-5G-gon" secondAttribute="height" multiplier="28:25" id="YAn-Wf-eMk"/>
+                                </constraints>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonRightY" translatesAutoresizingMaskIntoConstraints="NO" id="IyU-BR-C4h">
+                                <rect key="frame" x="216" y="323" width="84" height="84"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IyU-BR-C4h" secondAttribute="height" multiplier="1:1" id="uar-Wa-xaD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f62-xm-6aX" appends="YES" id="JYW-Lb-Q3l"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonLeftX" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-B0-kcg">
+                                <rect key="frame" x="20" y="323" width="84" height="84"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2fx-B0-kcg" secondAttribute="height" multiplier="1:1" id="6Xa-fu-Upl"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xzT-Qw-x01" appends="YES" id="wC2-q7-1Rc"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDa-pW-xSA">
+                                <rect key="frame" x="188" y="471" width="112" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iDa-pW-xSA" secondAttribute="height" multiplier="245:81" id="4Gu-ya-5y6"/>
+                                </constraints>
+                                <state key="normal" image="buttonSend"/>
+                                <connections>
+                                    <action selector="sendButtonPressed:" destination="1Hh-s0-ebQ" eventType="touchUpInside" id="HnW-FZ-MoJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iDa-pW-xSA" firstAttribute="trailing" secondItem="IyU-BR-C4h" secondAttribute="trailing" id="304-Yi-DML"/>
+                            <constraint firstItem="tlR-6c-Uev" firstAttribute="baseline" secondItem="Z4g-5G-gon" secondAttribute="firstBaseline" multiplier="8" constant="8" symbolType="layoutAnchor" id="7jy-Mr-c0k"/>
+                            <constraint firstItem="tlR-6c-Uev" firstAttribute="leading" secondItem="W9c-SZ-C7N" secondAttribute="leading" id="8SY-mZ-5uT"/>
+                            <constraint firstItem="2fx-B0-kcg" firstAttribute="firstBaseline" secondItem="Z4g-5G-gon" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="AWn-EV-jI2"/>
+                            <constraint firstItem="W9c-SZ-C7N" firstAttribute="bottom" secondItem="tlR-6c-Uev" secondAttribute="bottom" id="BvF-rX-ukL"/>
+                            <constraint firstItem="IyU-BR-C4h" firstAttribute="top" secondItem="2fx-B0-kcg" secondAttribute="top" id="Fad-5Q-hu6"/>
+                            <constraint firstItem="tlR-6c-Uev" firstAttribute="top" secondItem="VkR-f4-i3m" secondAttribute="top" id="GwV-Ma-PhT"/>
+                            <constraint firstItem="W9c-SZ-C7N" firstAttribute="trailing" secondItem="Z4g-5G-gon" secondAttribute="trailing" constant="20" id="Kd8-Jj-ew2"/>
+                            <constraint firstItem="IyU-BR-C4h" firstAttribute="trailing" secondItem="Z4g-5G-gon" secondAttribute="trailing" id="PdA-3I-haM"/>
+                            <constraint firstItem="W9c-SZ-C7N" firstAttribute="bottom" secondItem="iDa-pW-xSA" secondAttribute="bottom" priority="900" constant="20" id="Q7r-lx-DRZ"/>
+                            <constraint firstItem="2fx-B0-kcg" firstAttribute="leading" secondItem="Z4g-5G-gon" secondAttribute="leading" id="UyH-qZ-Yhd"/>
+                            <constraint firstItem="IyU-BR-C4h" firstAttribute="width" secondItem="2fx-B0-kcg" secondAttribute="width" id="VZn-2t-6HZ"/>
+                            <constraint firstItem="W9c-SZ-C7N" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iDa-pW-xSA" secondAttribute="bottom" constant="13" id="ZC6-Z3-Edt"/>
+                            <constraint firstItem="iDa-pW-xSA" firstAttribute="width" secondItem="tlR-6c-Uev" secondAttribute="width" multiplier="0.35" id="fXq-uF-Laa"/>
+                            <constraint firstItem="Z4g-5G-gon" firstAttribute="leading" secondItem="W9c-SZ-C7N" secondAttribute="leading" constant="20" id="gkH-6a-OTB"/>
+                            <constraint firstItem="tlR-6c-Uev" firstAttribute="width" secondItem="W9c-SZ-C7N" secondAttribute="width" id="wad-ba-nsV"/>
+                            <constraint firstItem="tlR-6c-Uev" firstAttribute="trailing" secondItem="W9c-SZ-C7N" secondAttribute="trailing" id="xpW-wJ-YmD"/>
+                            <constraint firstItem="2fx-B0-kcg" firstAttribute="width" secondItem="Z4g-5G-gon" secondAttribute="width" multiplier="0.3" id="yWy-mW-SYN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W9c-SZ-C7N"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="magicScreen" destination="Z4g-5G-gon" id="sa4-fU-yNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJr-Iw-g9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xzT-Qw-x01">
+                    <connections>
+                        <action selector="handlePanXWithRecognizer:" destination="1Hh-s0-ebQ" id="6AU-Rd-Q3T"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f62-xm-6aX">
+                    <connections>
+                        <action selector="handlePanYWithRecognizer:" destination="1Hh-s0-ebQ" id="iqp-6L-Jdl"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="372.46376811594206" y="130.43478260869566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundCompact" width="600" height="365"/>
+        <image name="backgroundExpanded" width="600" height="912"/>
+        <image name="buttonLeftX" width="144" height="144"/>
+        <image name="buttonRightY" width="144" height="144"/>
+        <image name="buttonSend" width="245" height="81"/>
+        <image name="buttonStart" width="245" height="81"/>
+    </resources>
+</document>
